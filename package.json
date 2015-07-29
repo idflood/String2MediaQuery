@@ -1,6 +1,6 @@
 {
   "name": "string2mediaquery",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Parse simple string expression to media query.",
   "license": "MIT",
   "repository": "idflood/String2MediaQuery",
@@ -13,11 +13,12 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "compile": "babel --modules umd --loose all -d lib/ src/",
-    "prepublish": "npm run compile",
-    "test": "mocha --compilers js:babel/register"
+    "compile": "babel src/string2mediaquery.js --modules umd --loose all --out-file lib/string2mediaquery.js",
+    "prepublish": "npm run compile && npm run uglify",
+    "test": "mocha --compilers js:babel/register",
+    "uglify": "uglifyjs lib/string2mediaquery.js -cm > lib/string2mediaquery.min.js"
   },
-  "main": "lib/index.js",
+  "main": "lib/string2mediaquery.js",
   "keywords": [
     "breakpoints",
     "css",
@@ -26,6 +27,7 @@
   "dependencies": {},
   "devDependencies": {
     "babel": "^5.8.12",
-    "mocha": "*"
+    "mocha": "*",
+    "uglify-js": "^2.4.24"
   }
 }
