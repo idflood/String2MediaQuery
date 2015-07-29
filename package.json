@@ -1,6 +1,6 @@
 {
   "name": "string2mediaquery",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Parse simple string expression to media query.",
   "license": "MIT",
   "repository": "idflood/String2MediaQuery",

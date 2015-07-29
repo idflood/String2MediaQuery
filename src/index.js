@@ -4,7 +4,7 @@
 let conditions_cache = {};
 
 // ex: String2MediaQuery('>=mobile <742px', {mobile: '320px'});
-let String2MediaQuery = function(query, breakpoints = {}) {
+function String2MediaQuery(query, breakpoints = {}) {
   // First replace named breakpoints with actual values.
   let raw_conditions = query;
   for (let key in breakpoints) {
@@ -36,7 +36,7 @@ let String2MediaQuery = function(query, breakpoints = {}) {
     }
     return conditions.join(' and ');
   }
-};
+}
 
 String2MediaQuery.parse = function(condition) {
   let smaller, larger, equal = false;
