@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save String2MediaQuery
+$ npm install --save string2mediaquery
 ```
 
 
