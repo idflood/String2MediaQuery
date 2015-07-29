@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var String2MediaQuery = require('./src/');
+var String2MediaQuery = require('./src/string2mediaquery.js');
 
 it('should parse simple query', function () {
   assert.strictEqual(String2MediaQuery.parse('>=300px'), '(min-width: 300px)');
