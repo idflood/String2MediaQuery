@@ -1,5 +1,5 @@
 {
-  "name": "String2MediaQuery",
+  "name": "string2mediaquery",
   "version": "0.0.1",
   "description": "Parse simple string expression to media query.",
   "license": "MIT",
@@ -19,7 +19,9 @@
   },
   "main": "lib/index.js",
   "keywords": [
-    ""
+    "breakpoints",
+    "css",
+    "css-mediaquery"
   ],
   "dependencies": {},
   "devDependencies": {
