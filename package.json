@@ -1,0 +1,29 @@
+{
+  "name": "String2MediaQuery",
+  "version": "0.0.1",
+  "description": "Parse simple string expression to media query.",
+  "license": "MIT",
+  "repository": "idflood/String2MediaQuery",
+  "author": {
+    "email": "david@stimul.ch",
+    "name": "David Mignot",
+    "url": "http://www.stimul.ch"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "compile": "babel --modules umd --loose all -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "mocha --compilers js:babel/register"
+  },
+  "main": "lib/index.js",
+  "keywords": [
+    ""
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.8.12",
+    "mocha": "*"
+  }
+}
